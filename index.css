@@ -189,8 +189,9 @@ body::selection {
 }
 
 /* our advantages */
-
-
+.icons {
+    fill: rgb(252, 9,1);
+}
 /* footer */
 footer {
     background-color: rgb(16, 12, 16);
