@@ -1,5 +1,7 @@
-
-
+body::selection {
+    background-color: red;
+    color: whitesmoke;
+}
 .close-btn {
     border: none;
     background: none;
