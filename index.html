@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
+  <link rel="stylesheet" href="../index.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+</head>
+
+<body class="bg-black">
+
+  <!-- Header -->
+  <header class="fixed-top">
+    <nav class="navbar bg-black">
+      <div class="container-fluid">
+        <span class="navbar-text mb-0 h1" style="color: whitesmoke; opacity: 0.7; font-weight: 500">Tech-Shop</span>
+        <div class="d-flex gap-2 me-3">
+          <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Search">
+            <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="whitesmoke" class="bi bi-search"
+              viewBox="0 0 16 16">
+              <path
+                d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+            </svg>
+            ,
+          </button>
+          <a href="./cart-page.html">
+            <div class="position-relative">
+              <button type="button" class="btn" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                data-bs-title="Cart">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="whitesmoke" class="bi bi-cart3"
+                  viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                </svg>
+              </button>
+              <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                17
+              </span>
+            </div>
+          </a>
+          <!-- user button -->
+          <div class="btn person ">
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="whitesmoke" class="bi bi-person"
+              viewBox="0 0 16 16">
+              <path
+                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+            </svg>
+            <!-- dailog-box -->
+            <div class="dialog-box" style="padding: 20px;">
+              <h5>Hello!</h5>
+              <p>Access account and manager orders</p>
+              <button popovertarget="my-popover">Login/Signup</button>
+              <hr>
+              <p>Please Login</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- CAROUSEL MAIN SLIDER -->
+  <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class="d-flex px-5 m-5">
+          <div class="carousel_div d-inline">
+            <h3>boAt Airdopes 131</h3>
+            <h1 class="mb-4">Featherweight For <br />Comfort All-Day.</h1>
+            <h5>₹1,099</h5>
+            <span class="original_price h5 ms-3 opacity-50">₹2,990</span><br />
+            <button type="button" class="btn px-4 mt-5 py-2" style="background-color: rgb(252, 9, 1); color: white">
+              Shop Now
+            </button>
+          </div>
+          <div class="p-5">
+            <img src="./images/boat131-3.png" class="carousel_image" />
+          </div>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex px-5 m-5">
+          <div class="carousel_div d-inline">
+            <h4>Sony WH-XB910N</h4>
+            <h1 class="mb-4" style="font-size: 2.5rem">
+              Give Your Favourite <br />Music A Boost.
+            </h1>
+            <h5>₹13,489</h5>
+            <span class="original_price h5 ms-3 opacity-50">₹19,990</span><br />
+            <button type="button" class="btn px-4 mt-5 py-2" style="background-color: rgb(252, 9, 1); color: white">
+              Shop Now
+            </button>
+          </div>
+          <div class="p-5">
+            <img src="./images/sonyXb910n-1.png" class="carousel_image" />
+          </div>
+           
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="d-flex px-5 m-5">
+          <div class="carousel_div d-inline">
+            <h4>boAt Airdopes 131</h4>
+            <h1 class="mb-4" style="font-size: 2.3rem">
+              Keep The Noise Out, Or <br />in. You Choose.
+            </h1>
+            <h5>₹9,999</h5>
+            <span class="original_price h5 ms-3 opacity-50">₹14,999</span><br />
+            <button type="button" class="btn px-4 mt-5 py-2" style="background-color: rgb(252, 9, 1); color: white">
+              Shop Now
+            </button>
+          </div>
+          <div class="p-5">
+            <img src="./images/jbl660nc-1.png" class="carousel_image" />
+          </div>
+              
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Top Products -->
+  <h3 class="home-page-headings mb-5 opacity-50">Products</h3>
+  <nav class="top-products d-flex justify-content-between mx-5 px-5">
+    <a href="" class="all px-3">All</a>
+    <a href="" class="px-3">Headphones</a>
+    <a href="" class="px-3">Earbuds</a>
+    <a href="" class="px-3">Earbuds</a>
+    <a href="" class="px-3">Earphones</a>
+    <a href="" class="px-3">Neckbands</a>
+  </nav>
+  <!-- Products -->
+  <div class="all-products my-5 ms-3 pb-5">
+    <div class="card bg-dark " style="width: 19rem">
+      <a href="./product-details-page.html" class="clickable-img"> <img src="./images/jbl660nc-1.png"></a>
+      <div class="card-body bg-black product-card">
+        <div>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+        </div>
+
+        <h5 class="mt-3" style="color: whitesmoke">JBL Live 660NC</h5>
+        <p class="opacity-50" style="color: whitesmoke">
+          Wireless Over-Ear NC Headphones
+        </p>
+        <hr style="color: whitesmoke" />
+        <h4 class="fw-bold mb-3" style="color: whitesmoke">
+          ₹9,999
+          <span class="feature-products-original-price ms-1 opacity-50 h5">₹14,999</span>
+        </h4>
+        <div class="d-grid">
+          <a href="#" class="px-5 py-2 mt-3 fw-bold add-cart-button">Add to cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-dark " style="width: 19rem">
+      <img src="./images/boat518-1.png" class="cards-img" alt="..." />
+      <div class="card-body bg-black product-card">
+        <div>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+        </div>
+
+        <h5 class="mt-3" style="color: whitesmoke">boAt Rockerz 518</h5>
+        <p class="opacity-50" style="color: whitesmoke">
+          On-Ear Wireless headphones
+        </p>
+        <hr style="color: whitesmoke" />
+        <h4 class="fw-bold mb-3" style="color: whitesmoke">
+          ₹1,299
+          <span class="feature-products-original-price ms-1 opacity-50 h5">₹3,990</span>
+        </h4>
+        <div class="d-grid">
+          <a href="#" class="px-5 py-2 mt-3 fw-bold add-cart-button">Add to cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-dark" style="width: 19rem">
+      <img src="./images/boat131-1.png" class="cards-img" alt="..." />
+      <div class="card-body bg-black product-card">
+        <div>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+        </div>
+
+        <h5 class="mt-3" style="color: whitesmoke">boAt Airdopes 131</h5>
+        <p class="opacity-50" style="color: whitesmoke">
+          Wireless In-Ear Earbuds
+        </p>
+        <hr style="color: whitesmoke" />
+        <h4 class="fw-bold mb-3" style="color: whitesmoke">
+          ₹1,099
+          <span class="feature-products-original-price ms-1 opacity-50 h5">₹2,990</span>
+        </h4>
+        <div class="d-grid">
+          <a href="#" class="px-5 py-2 mt-3 fw-bold add-cart-button">Add to cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-dark" style="width: 19rem">
+      <img src="./images/boat110-1.png" class="cards-img" alt="..." />
+      <div class="card-body bg-black product-card">
+        <div>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+        </div>
+
+        <h5 class="mt-3" style="color: whitesmoke">boAt BassHeads 110</h5>
+        <p class="opacity-50" style="color: whitesmoke">
+          In-Ear Wired Earphones
+        </p>
+        <hr style="color: whitesmoke" />
+        <h4 class="fw-bold mb-3" style="color: whitesmoke">
+          ₹499
+          <span class="feature-products-original-price ms-1 opacity-50 h5">₹999</span>
+        </h4>
+        <div class="d-grid">
+          <a href="#" class="px-5 py-2 mt-3 fw-bold add-cart-button">Add to cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-dark" style="width: 19rem">
+      <img src="./images/boat410-1.png" class="cards-img" alt="..." />
+      <div class="card-body bg-black product-card">
+        <div>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+        </div>
+
+        <h5 class="mt-3" style="color: whitesmoke">boAt Rockerz 410</h5>
+        <p class="opacity-50" style="color: whitesmoke">
+          Bluetooth & Wired On-Ear Headphones
+        </p>
+        <hr style="color: whitesmoke" />
+        <h4 class="fw-bold mb-3" style="color: whitesmoke">
+          ₹1,599
+          <span class="feature-products-original-price ms-1 opacity-50 h5">₹2,990</span>
+        </h4>
+        <div class="d-grid">
+          <a href="#" class="px-5 py-2 mt-3 fw-bold add-cart-button">Add to cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-dark" style="width: 19rem">
+      <img src="./images/jbl200bt-1.png" class="cards-img" alt="..." />
+      <div class="card-body bg-black product-card">
+        <div>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+        </div>
+
+        <h5 class="mt-3" style="color: whitesmoke">JBL Live 200BT</h5>
+        <p class="opacity-50" style="color: whitesmoke">
+          In-Ear Wireless Neckbands
+        </p>
+        <hr style="color: whitesmoke" />
+        <h4 class="fw-bold mb-3" style="color: whitesmoke">
+          ₹3,699
+          <span class="feature-products-original-price ms-1 opacity-50 h5">₹5,299</span>
+        </h4>
+        <div class="d-grid">
+          <a href="#" class="px-5 py-2 mt-3 fw-bold add-cart-button">Add to cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-dark" style="width: 19rem">
+      <img src="./images/jbl660nc-1.png" class="cards-img" alt="..." />
+      <div class="card-body bg-black product-card">
+        <div>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+        </div>
+
+        <h5 class="mt-3" style="color: whitesmoke">Sony WH-XB910N</h5>
+        <p class="opacity-50" style="color: whitesmoke">
+          Wireless Over-Ear Headphones
+        </p>
+        <hr style="color: whitesmoke" />
+        <h4 class="fw-bold mb-3" style="color: whitesmoke">
+          ₹13,489
+          <span class="feature-products-original-price ms-1 opacity-50 h5">₹19,990</span>
+        </h4>
+        <div class="d-grid">
+          <a href="#" class="px-5 py-2 mt-3 fw-bold add-cart-button">Add to cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-dark" style="width: 19rem">
+      <img src="./images/jbl760nc-1.png" class="cards-img" alt="..." />
+      <div class="card-body bg-black product-card">
+        <div>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+        </div>
+
+        <h5 class="mt-3" style="color: whitesmoke">JBL Tune 760NC</h5>
+        <p class="opacity-50" style="color: whitesmoke">
+          Wireless Over-Ear NC Headphones
+        </p>
+        <hr style="color: whitesmoke" />
+        <h4 class="fw-bold mb-3" style="color: whitesmoke">
+          ₹5,999
+          <span class="feature-products-original-price ms-1 opacity-50 h5">₹7,999</span>
+        </h4>
+        <div class="d-grid">
+          <a href="#" class="px-5 py-2 mt-3 fw-bold add-cart-button">Add to cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-dark" style="width: 19rem">
+      <img src="./images/boat255r-1.png" class="cards-img" alt="..." />
+      <div class="card-body bg-black product-card">
+        <div>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+        </div>
+
+        <h5 class="mt-3" style="color: whitesmoke">boAt Rockerz 255</h5>
+        <p class="opacity-50" style="color: whitesmoke">
+          In-Ear Truly Wireless Earbuds
+        </p>
+        <hr style="color: whitesmoke" />
+        <h4 class="fw-bold mb-3" style="color: whitesmoke">
+          ₹99
+          <span class="feature-products-original-price ms-1 opacity-50 h5">₹2,990</span>
+        </h4>
+        <div class="d-grid">
+          <a href="#" class="px-5 py-2 mt-3 fw-bold add-cart-button">Add to cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-dark" style="width: 19rem">
+      <img src="./images/jbl100-1.png" class="cards-img" alt="..." />
+      <div class="card-body bg-black product-card">
+        <div>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+        </div>
+
+        <h5 class="mt-3" style="color: whitesmoke">JBL Wave 100</h5>
+        <p class="opacity-50" style="color: whitesmoke">
+          In-Ear Truly Wireless Earbuds
+        </p>
+        <hr style="color: whitesmoke" />
+        <h4 class="fw-bold mb-3" style="color: whitesmoke">
+          ₹2,999
+          <span class="feature-products-original-price ms-1 opacity-50 h5">₹6,999</span>
+        </h4>
+        <div class="d-grid">
+          <a href="#" class="px-5 py-2 mt-3 fw-bold add-cart-button">Add to cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="card bg-dark" style="width: 19rem">
+      <img src="./images/sony1000xm4-1.png" class="cards-img" alt="..." />
+      <div class="card-body bg-black product-card">
+        <div>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+          <i class="bi bi-star-fill rating-star"></i>
+        </div>
+
+        <h5 class="mt-3" style="color: whitesmoke">Sony WF-1000XM4</h5>
+        <p class="opacity-50" style="color: whitesmoke">
+          Wireless In-Ear NC Headphones
+        </p>
+        <hr style="color: whitesmoke" />
+        <h4 class="fw-bold mb-3" style="color: whitesmoke">
+          ₹19,990
+          <span class="feature-products-original-price ms-1 opacity-50 h5">₹24,990</span>
+        </h4>
+        <div class="d-grid">
+          <a href="#" class="px-5 py-2 mt-3 fw-bold add-cart-button">Add to cart</a>
+        </div>
+      </div>
+    </div>
+    <div class="twelfth-product" style="width: 19rem">
+      <p class="px-5">
+        Browse All Products
+        <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="whitesmoke"
+          class="bi bi-arrow-right opacity-50" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
+        </svg>
+      </p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="pt-5 pb-3">
+    <div class="d-flex gap-5 mb-2 justify-content-around mx-3">
+      <div class="footer-start">
+        <h2>Tech-Shop</h2>
+        <p>
+          Subcribe to our Email alerts to receive early discount offers, and
+          new products info.
+        </p>
+        <input type="email" placeholder="Email Address*" class="bg-dark" /><br />
+        <button class="Subcribe px-3 py-1 mt-3">Subscribe</button>
+      </div>
+      <div>
+        <ul class="footer-list">
+          <p>Help</p>
+          <li>FAQs</li>
+          <li>Track Order</li>
+          <li>Cancel Order</li>
+          <li>Return Order</li>
+          <li>Warrantly Info</li>
+        </ul>
+      </div>
+      <div>
+        <ul class="footer-list">
+          <p>Policies</p>
+          <li>Return Policy</li>
+          <li>Security</li>
+          <li>Sitemap</li>
+          <li>Privacy Policy</li>
+          <li>Terms & Conditiond</li>
+        </ul>
+      </div>
+      <div>
+        <ul class="footer-list">
+          <p>Company</p>
+          <li>About Us</li>
+          <li>Contact Us</li>
+          <li>Service Centers</li>
+          <li>Careers</li>
+          <li>Affiliates</li>
+        </ul>
+      </div>
+    </div>
+    <hr class="my-4 opacity-30" style="color: whitesmoke" />
+
+    <div class="d-flex justify-content-between me-5 mt-4">
+      <p class="ms-2">
+        2025|All Rights Reserved Built by|<b> PHANEENDRA GUDURU</b>
+      </p>
+
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+  <script>
+    // Initialize tooltips (if not using data-bs-auto-initialize="true")
+    const tooltipTriggerList = document.querySelectorAll(
+      '[data-bs-toggle="tooltip"]'
+    );
+    const tooltipList = [...tooltipTriggerList].map(
+      (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
+    );
+  </script>
+</body>
+
+</html>

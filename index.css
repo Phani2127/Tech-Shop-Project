@@ -1,0 +1,329 @@
+
+
+.close-btn {
+    border: none;
+    background: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.bi-x {
+    color: red;
+    font-size: 2rem;
+}
+
+
+.dialog-box {
+    display: none;
+    text-align: start;
+    position: absolute;
+    top: 75%;
+    left: 96%;
+    transform: translateX(-100%);
+    background-color: black;
+    border: 1px solid rgba(245, 245, 245, 0.7);
+    color: whitesmoke;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(59, 54, 54, 0.2);
+    white-space: nowrap;
+    opacity: 0.5;
+}
+
+.dialog-box button {
+    background-color: black;
+    color: white;
+    border: 1px solid rgba(245, 245, 245, 0.7);
+    padding: 0.7rem;
+}
+
+.person:hover .dialog-box {
+    display: block;
+}
+
+
+/* carousel main slider */
+.carousel_image {
+    width: 40rem;
+    height: 40rem;
+}
+
+.btn {
+    color: whitesmoke;
+    background-color: orangered;
+}
+
+.carousel_div {
+    color: whitesmoke;
+    align-content: center;
+
+}
+
+.carousel_div h1 {
+    font-size: 3rem;
+}
+
+.carousel_div h5 {
+
+    font-size: xx-large;
+    display: inline;
+}
+
+.original_price {
+    text-decoration: line-through;
+    color: rgba(128, 128, 128, 0.464);
+}
+
+/* feature-products */
+.home-page-headings {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.Products {
+    border: none;
+}
+
+.card-title {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.card-text {
+    text-align: center;
+    color: whitesmoke;
+}
+
+.feature-products-original-price {
+    text-decoration: line-through;
+}
+
+/* top products */
+.top-products a {
+    color: whitesmoke;
+    text-decoration: none;
+    border-radius: 3px;
+
+}
+
+.all {
+    background-color: rgb(252, 9, 1);
+    color: white;
+}
+
+.top-products a:hover {
+    background-color: rgb(252, 9, 1);
+    color: white;
+}
+
+.add-cart-button {
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(252, 9, 1);
+    color: white;
+    border-radius: 2px
+}
+
+.product-card {
+    text-align: start;
+}
+
+.product-card a {
+    text-decoration: none;
+}
+
+.star-img {
+    fill: rgb(252, 9, 1);
+}
+
+.rating-star {
+    color: rgb(252, 9, 1);
+    font-size: 0.9rem;
+}
+
+.all-products {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 1rem;
+}
+
+.twelfth-product {
+    background-color: black;
+    border: 1px solid rgba(245, 245, 245, 0.3);
+    border-radius: 2px;
+    opacity: 0.5;
+    align-content: center;
+}
+
+.twelfth-product p {
+    color: whitesmoke;
+    font-size: xx-large;
+    text-align: start;
+}
+
+.clickable-img img {
+    width: 100%;
+    padding: 2rem;
+    transition-property: transform;
+    transition-duration: 10ms;
+    transition-timing-function: ease;
+}
+
+.clickable-img img:hover {
+    transform: scale(1.1);
+}
+
+.cards-img {
+    padding: 2rem;
+    transition-property: transform;
+    transition-duration: 10ms;
+    transition-timing-function: ease;
+}
+
+.cards-img:hover {
+    transform: scale(1.1);
+
+}
+
+/* our advantages */
+
+
+/* footer */
+footer {
+    background-color: rgb(16, 12, 16);
+    justify-content: center;
+
+}
+
+.footer-start {
+    width: 23%;
+}
+
+.footer-start h2 {
+    color: whitesmoke;
+    opacity: 0.7;
+}
+
+.footer-start p {
+    color: whitesmoke;
+    opacity: 0.4;
+
+}
+
+.footer-start input {
+    background-color: rgb(16, 12, 16);
+    border: 1px solid rgba(245, 245, 245, 0.3);
+    width: 95%;
+    padding: 0.5rem;
+    border-radius: 2px;
+}
+
+.footer-start button {
+    background-color: rgb(252, 9, 1);
+    color: whitesmoke;
+    border: none;
+    font-weight: 500;
+    border-radius: 2px;
+}
+
+.footer-list li {
+    list-style-type: none;
+    color: whitesmoke;
+    opacity: 0.4;
+    margin-bottom: 1rem;
+}
+
+.footer-list p {
+    color: whitesmoke;
+    font-weight: bold;
+    opacity: 0.7;
+}
+
+footer p {
+    color: whitesmoke;
+    opacity: 0.5;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+.social-media-icons {
+    color: gray;
+    font-size: 1.5rem;
+}
+
+/* ---------CART-PAGE----------- */
+.cart img {
+    width: 30%;
+    /* float: left; */
+}
+
+.cart-card {
+    border: 1px solid rgba(245, 245, 245, 0.01);
+}
+
+.cart-button {
+    border: 1px solid rgba(245, 245, 245, 0.3);
+    border-radius: 5px;
+}
+
+/* Product-details-page */
+.product-images img {
+    width: 100%;
+    border: 1px solid rgba(245, 245, 245, 0.3);
+    padding: 1rem;
+}
+
+.product-image {
+    width: 47%;
+
+}
+
+.offer-discount p {
+    border: 1px solid rgba(245, 245, 245, 0.3);
+    opacity: 0.7;
+    font-size: 0.94rem;
+}
+
+/* overall product */
+.overall-card {
+    border: 1px solid rgba(245, 245, 245, 0.3);
+}
+
+/* -----------------SIGNUP-FORM------------------ */
+.Signup-form {
+    width: 24rem;
+    color: whitesmoke;
+    background-color: rgba(59, 54, 54, 0.2);
+    border: 1px solid rgba(245, 245, 245, 0.3);
+    padding: 2rem;
+}
+
+.Signup-form input {
+    color: white;
+    width: 100%;
+    height: 2.4rem;
+    margin-bottom: 1rem;
+    background-color: rgba(59, 54, 54, 0.2);
+    border: 1px solid rgba(245, 245, 245, 0.3);
+    padding: 1rem o.3rem;
+}
+
+.Facebook {
+    background-color: rgb(88, 88, 219);
+    color: white;
+    border: none;
+}
+
+.Google {
+    background-color: rgb(159, 46, 4);
+    color: white;
+    border: none;
+}
+
+.Twitter {
+    color: white;
+    border: none;
+}
